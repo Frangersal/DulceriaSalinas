@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav{
+    padding: .1rem .5rem;
+    background: linear-gradient(225deg, rgba(7,59,76,1) 66%, rgba(7,59,76,0.6530987394957983) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.671);
+    
+}
+.nav__icono{
+    padding: 1rem 1rem .5rem 1rem;
+    
+    
+    font: italic bold 2rem Georgia, Serif;
+    color: #FFFFFF;
+    text-shadow: -0.2rem 0.1rem 0rem #0a0e27;
+    font-size: 2rem;
+    
+}
+.nav__list{
+    padding: 0rem 0rem .5rem 0rem;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+.nav__item{
+
+    margin: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 24%;
+    height: 5rem;
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: rgba(14, 0, 14, 0.87);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.nav__item:hover{
+    position: relative;
+    top: .3rem;
+}
+.main-section{
+    
+}
+.box{
+    width: 100%;
+    height: 70rem;
+
+    padding: 9rem 1rem 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+/* bienvenido */
+.box__titulo{
+    margin-top: 3rem;
+    /* background-color: rgba(255, 127, 80, 0.315); */
+    width: 100vw;
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.bienvenido__opciones{
+    /* background-color: #7757ec4b; */
+    width: 100vw;
+    height: 50%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.opcion-boton{
+    border-radius: 3rem;
+    padding: 1rem;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.opcion-boton:hover{
+    position: relative;
+    top: .4rem;
+    box-shadow: #2B2D42 -.0rem .0rem;
+}
+.opciones__whatsapp{
+    
+    background: linear-gradient(45deg, rgba(0,190,0,1) 66%, rgba(0,185,83,0.8491771708683473) 100%);
+    color: #fff;
+    box-shadow: #2B2D42 -.2rem .2rem;
+}
+.opciones__mapa{
+    
+    background-color: #ff0000;
+    color: #fff;
+    box-shadow: #2B2D42 -.2rem .2rem;
+
+}
+.box__titulo-principal{
+    /* background-color: coral; */
+    text-align: center;
+    font: italic bold 2rem Georgia, Serif;
+    color: #FFFFFF;
+    text-shadow: -0.2rem 0.1rem 0rem #0a0e27;
+    font-size: 6rem;
+    width: 100vw;
+
+}
+.box__titulo-subtitulo{
+    /* background-color: rgb(109, 36, 9); */
+    text-align: center;
+    /* background-color: blue; */
+    width: 100vw;
+    font: italic bold 2rem Georgia, Serif;
+    color: #FFFFFF;
+    text-shadow: -0.2rem 0.1rem 0rem #0a0e27;
+    font-size: 1.9rem;
+
+    width: 100vw;
+}
+/*  galeria  ----*/
+.box__titulo-segundo{
+    font: italic bold 2rem Georgia, Serif;
+    color: #FFFFFF;
+    text-shadow: -0.2rem 0.1rem 0rem #0a0e27;
+    font-size: 2rem;
+}
+.box__titulo-segundo-alt{
+    font: italic bold 2rem Georgia, Serif;
+    color: #0a0e27;
+    text-shadow: -0.2rem 0.1rem 0rem #FFF;
+    font-size: 2rem;
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+}
+.box-galeria{
+    margin: 1rem auto;
+    width:100%;
+    height: 100rem;
+    max-width:960px;
+    padding:0 20px 20px;
+    box-sizing: border-box;
+    column-count: 3;
+    /* Espacio entre columnas */
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.box-galeria__card{
+    /* background:#fff; */
+    border-radius:4rem;
+    border:1px ;
+    margin:0 0 20px 0;
+    text-align: center;
+    max-width: 100%;
+    /* filter: opacity(70%); */
+    /*Evitamos que se corte al cambiar de columna*/
+    break-inside: avoid;
+    page-break-inside: avoid;     
+    
+    background-color: #000000a8;
+    box-shadow: #000000 -.2rem .2rem;
+}
+
+.box-galeria__marco{
+    border-radius: 3rem;
+    padding: 0rem;
+    height: 90%;    
+    overflow: hidden;
+}
+.box-galeria__img{
+    border-radius: 2rem;
+    /* padding: 1rem; */
+    width: 100%;
+
+
+}
+.bienvenido{
+    order: 1;
+    background-image: url("../img/banner-mobile.jpg");
+    background-color: #ef476f;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.galeria{
+
+    height: 100rem;
+    order: 2;
+    background-color: #faf25a;
+}
+.horario{
+    order: 3;
+    background-color: #9998ff;
+}
+.contacto{
+    order: 4;
+    background-color: #ffaf75;
+    
+}
+.mapa{
+    order: 5;
+    background-color: #faf25a;
+
+}
