@@ -1,138 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index,follow" />
-    <meta name="Dulceria Saldivar" content="Dulceria Saldivar, la mejor dulceria de Acapulco"/>
-    <link rel="stylesheet" href="static/css/style.css" media="screen and (min-width:280px)">
-    <link rel="stylesheet" href="./static/css/tablet.css" media="screen and (min-width:600px)">
+    <meta name="description" content="Dulcería Salinas, dulces por mayoreo en Acapulco."/>
+    <!-- Tipografías de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/f8522fdeef.js" crossorigin="anonymous"></script>
-    <title>Dulceria Saldivar</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="./static/img/saldivar-icon.webp">
+    <title>Dulcería Salinas | Acapulco</title>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <h1 class="nav__icono">
-                Dulceria Saldivar
-            </h1>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">🍬 Dulcería Salinas</a>
             <ul class="nav__list">
-                <!-- <li class="nav__item">Inicio</li> -->
-                <li class="nav__item">Galeria</li>
-                <li class="nav__item">Horario</li>
-                <li class="nav__item">Contacto</li>
-                <li class="nav__item">Mapa</li>
-
+                <li class="nav__item"><a href="#galeria" class="nav__link">Galería</a></li>
+                <li class="nav__item"><a href="#horario" class="nav__link">Horario</a></li>
+                <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
             </ul>
-
         </nav>
     </header>
+
     <main>
-        <aside>
+        <!-- SECCIÓN: INICIO (HERO) -->
+        <section class="hero" id="inicio">
+            <div class="hero__content container">
+                <h1 class="hero__title">Dulcería Salinas</h1>
+                <p class="hero__subtitle">Venta de dulces por <span>mayoreo y menudeo</span></p>
+                <p class="hero__location"><i class="fas fa-map-marker-alt"></i> Renacimiento, Acapulco</p>
+                
+                <div class="hero__actions">
+                    <a href="#" class="btn btn--whatsapp">
+                        <i class="fab fa-whatsapp"></i> Chat ahora
+                    </a>
+                    <a href="#mapa" class="btn btn--mapa">
+                        <i class="fas fa-map-marked-alt"></i> Ver Mapa
+                    </a>
+                </div>
+            </div>
+            <!-- Elementos decorativos (opcional) -->
+            <div class="hero__overlay"></div>
+        </section>
 
-        </aside>
-        <section class="main-section">
-            <div class="box bienvenido">
-                <div class="box__titulo">
-                    <h1 class="box__titulo-principal">
-                        Dulceria Saldivar
-                    </h1>
-                    <h2 class="box__titulo-subtitulo">
-                        DULCES POR MAYOREO
-                    </h2>
-                    <h2 class="box__titulo-subtitulo">
+        <!-- SECCIÓN: GALERÍA -->
+        <section class="section galeria" id="galeria">
+            <div class="container">
+                <h2 class="section__title">Galería</h2>
+                <div class="grid-gallery">
+                    <img src="./static/img/img-google-maps/01-dulces.webp" alt="Dulces variados" class="grid-gallery__img grid-gallery__img--large">
+                    <img src="./static/img/img-google-maps/02-dulces.webp" alt="Dulces mayoreo" class="grid-gallery__img grid-gallery__img--wide">
+                    <img src="./static/img/img-google-maps/03-dulces.webp" alt="Piñatas y dulces" class="grid-gallery__img grid-gallery__img--tall">
+                    <img src="./static/img/img-google-maps/04-dulces.webp" alt="Chocolates" class="grid-gallery__img">
+                    <img src="./static/img/img-google-maps/05-dulces.webp" alt="Botanas" class="grid-gallery__img grid-gallery__img--wide">
+                    <img src="./static/img/img-google-maps/06-dulces.webp" alt="Golosinas" class="grid-gallery__img">
+                    <img src="./static/img/img-google-maps/07-dulces.webp" alt="Dulces tradicionales" class="grid-gallery__img grid-gallery__img--wide">
+                    <img src="./static/img/img-google-maps/08-dulces.webp" alt="Gomitas y chicles" class="grid-gallery__img grid-gallery__img--wide">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: HORARIOS Y CONTACTO -->
+        <section class="section info-section">
+            <div class="container info-grid">
+                <div class="info-card" id="horario">
+                    <div class="info-card__icon"><i class="far fa-clock"></i></div>
+                    <h3>Horario de Atención</h3>
+                    <p>Lunes a Sábado: <strong>8:00 AM - 8:00 PM</strong></p>
+                    <p>Domingos: <strong>9:00 AM - 4:00 PM</strong></p>
+                </div>
+                
+                <div class="info-card" id="contacto">
+                    <div class="info-card__icon"><i class="fas fa-phone-alt"></i></div>
+                    <h3>Contacto</h3>
+                    <p>Llámanos o envíanos un mensaje para cotizaciones.</p>
+                    <p><strong>Tel: 744 123 4567</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: MAPA -->
+        <section class="section mapa" id="mapa">
+            <div class="container">
+                <h2 class="section__title">Encuéntranos</h2>
+                <div class="mapa__container">
+                    <div class="mapa__overlay" id="mapa-overlay">
                         <i class="fas fa-map-marker-alt"></i>
-                        Renacimiento, Acapulco
-                    </h2>
-                </div>
-                <div class="bienvenido__opciones">
-
-                    <div class="opcion-boton opciones__whatsapp">
-                        <i class="fab fa-whatsapp fa-7x"></i>
+                        <p>¡Hola! Para mostrarte exactamente dónde estamos, usamos un mapa de Google que requiere algunas cookies. ¿Nos das permiso para cargarlo?</p>
+                        <button class="btn btn--whatsapp" id="btn-mapa-consent">¡Sí, mostrar mapa!</button>
                     </div>
-            
-                    <div class="opcion-boton opciones__mapa">
-                        <i class="fas fa-map-marked-alt fa-6x"></i>
-                    </div>
+                    <iframe class="mapa__iframe" id="google-map" title="Mapa de ubicación de Dulcería Saldívar en Google Maps" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15270.268287220608!2d-99.8297424!3d16.8972974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ca57552c470c49%3A0x9a577aeb61392ceb!2sDulceria%20Saldivar!5e0!3m2!1ses-419!2smx!4v1619497532653!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-            <div class="box galeria">
-                <h2 class="box__titulo-segundo-alt">
-                    Galeria
-                </h2>
-                <section class="box-galeria">
-                    <article class="box-galeria__card">
-                        <figure class="box-galeria__marco">
-                            <img class="box-galeria__img" src="./static/img/img-google-maps/01-dulces.jpg" alt="">
-                        </figure>
-                    </article>
-                    <article class="box-galeria__card">
-                        <figure class="box-galeria__marco">
-                            <img class="box-galeria__img" src="./static/img/img-google-maps/02-dulces.jpg" alt="">
-                        </figure>
-                    </article>
-                    <article class="box-galeria__card">
-                        <figure class="box-galeria__marco">
-                            <img class="box-galeria__img" src="./static/img/img-google-maps/03-dulces.jpg" alt="">
-                        </figure>
-                    </article>
-                    <article class="box-galeria__card">
-                        <figure class="box-galeria__marco">
-                            <img class="box-galeria__img" src="./static/img/img-google-maps/04-dulces.jpg" alt="">
-                        </figure>
-                    </article>
-                    <article class="box-galeria__card">
-                        <figure class="box-galeria__marco">
-                            <img class="box-galeria__img" src="./static/img/img-google-maps/05-dulces.jpg" alt="">
-                        </figure>
-                    </article>
-                    <article class="box-galeria__card">
-                        <figure class="box-galeria__marco">
-                            <img class="box-galeria__img" src="./static/img/img-google-maps/06-dulces.jpg" alt="">
-                        </figure>
-                    </article>
-                    <article class="box-galeria__card">
-                        <figure class="box-galeria__marco">
-                            <img class="box-galeria__img" src="./static/img/img-google-maps/07-dulces.jpg" alt="">
-                        </figure>
-                    </article>
-                    <article class="box-galeria__card">
-                        <figure class="box-galeria__marco">
-                            <img class="box-galeria__img" src="./static/img/img-google-maps/08-dulces.jpg" alt="">
-                        </figure>
-                    </article>
-                    <article class="box-galeria__card">
-                        <figure class="box-galeria__marco">
-                            <img class="box-galeria__img" src="./static/img/img-google-maps/08-dulces.jpg" alt="">
-                        </figure>
-                    </article>
-
-                </section>
-            </div>
-            <div class="box horario">
-                <h2 class="box__titulo-segundo">
-                    Seccion horario
-                </h2>
-            </div>
-            <div class="box contacto">
-                <h2 class="box__titulo-segundo">
-                    Seccion contacto
-                </h2>
-            </div>
-            <div class="box mapa">
-                <h2 class="box__titulo-segundo-alt">
-                    Seccion mapa    
-                </h2>
-                <!-- <i class="fas fa-map-marked-alt fa-2sx"></i> -->
-                <section class="mapa__marco">
-                    <iframe class="mapa__google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15270.268287220608!2d-99.8297424!3d16.8972974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ca57552c470c49%3A0x9a577aeb61392ceb!2sDulceria%20Saldivar!5e0!3m2!1ses-419!2smx!4v1619497532653!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </section>
-            </div>
-
         </section>
     </main>
 
-    
+    <!-- BANNER DE COOKIES -->
+    <div class="cookie-banner" id="cookie-banner">
+        <p>¡Hola, dulce visitante! 🍬 Usamos algunas cookies necesarias (como las del mapa de Google) para ofrecerte la mejor experiencia en nuestra página. ¿Todo bien con eso?</p>
+        <div class="cookie-banner__actions">
+            <button class="btn btn--whatsapp" id="btn-accept-cookies">¡Claro que sí!</button>
+            <button class="btn btn--mapa" id="btn-reject-cookies">Mejor no</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>&copy; <span id="current-year"></span> Dulcería Saldívar. Todos los derechos reservados.</p>
+            <a href="#" class="footer__pagespeed-btn" target="_blank" rel="noopener">
+                <img src="./static/img/pagespeedinsights.webp" alt="PageSpeed Insights" class="footer__pagespeed-img">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // LÓGICA DE MANEJO DE COOKIES Y GOOGLE MAPS
+        const cookieBanner = document.getElementById('cookie-banner');
+        const mapOverlay = document.getElementById('mapa-overlay');
+        const googleMap = document.getElementById('google-map');
+
+        function loadGoogleMap() {
+            if (googleMap.dataset.src && !googleMap.src) {
+                googleMap.src = googleMap.dataset.src;
+            }
+            if (mapOverlay) {
+                mapOverlay.style.display = 'none';
+            }
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            cookieBanner.classList.remove('show');
+            loadGoogleMap();
+        }
+
+        function rejectCookies() {
+            localStorage.setItem('cookieConsent', 'rejected');
+            cookieBanner.classList.remove('show');
+        }
+
+        // Al cargar la página verificamos el estado
+        document.addEventListener('DOMContentLoaded', () => {
+            const consentStatus = localStorage.getItem('cookieConsent');
+            
+            if (consentStatus === 'accepted') {
+                loadGoogleMap();
+            } else if (consentStatus === 'rejected') {
+                // No cargamos el mapa, el overlay se queda visible
+            } else {
+                // Si aún no se decide, pasamos el banner al viewport tras 1 segundo
+                setTimeout(() => cookieBanner.classList.add('show'), 1000);
+            }
+        });
+
+        // Eventos de botones
+        document.getElementById('btn-accept-cookies').addEventListener('click', acceptCookies);
+        document.getElementById('btn-reject-cookies').addEventListener('click', rejectCookies);
+        document.getElementById('btn-mapa-consent').addEventListener('click', acceptCookies);
+    </script>
 </body>
-</html>l
+</html>
